@@ -23,12 +23,13 @@ import HobbiesAndInterests7Form from "./Coponents/CreateCV/HobbiesAndInterests7F
 import ForgetPasswordPage from "./Pages/Auth/forget-password-page";
 import ResetPasswordPage from "./Pages/Auth/reset-password-page";
 import MustafaPart from "./Coponents/MustafaPart";
-
-
+import BackToHomeGlobal from "./Coponents/backToHomeGlobal";
 
 function App() {
 	return (
 		<div className="App">
+			<BackToHomeGlobal />
+			
 			<Routes>
 				<Route path="/" element={<MustafaPart />} />
 
