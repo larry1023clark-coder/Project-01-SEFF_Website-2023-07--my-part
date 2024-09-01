@@ -1,0 +1,142 @@
+@font-face {
+	font-family: "Font Awesome 6 Free";
+	src: url("@fortawesome/fontawesome-free/webfonts/fa-solid-900.ttf") format("truetype");
+}
+
+.admin-job-search input,
+.admin-job-search input:focus {
+	background-color: transparent;
+	color: white;
+	border: 0;
+	outline: 0;
+	box-shadow: none;
+}
+.admin-job-search input::placeholder {
+	color: var(--placeholder);
+}
+
+.admin-job-search input:-webkit-autofill,
+.admin-job-search input:-webkit-autofill:hover,
+.admin-job-search input:-webkit-autofill:focus,
+.admin-job-search input:-webkit-autofill:active {
+	background-color: transparent !important;
+	-webkit-text-fill-color: var(--white);
+	-webkit-background-clip: text;
+}
+
+/* -------------------------------admin jobs top sidebar ------------------------ */
+
+.admin-topbar-link.topbar-active {
+	color: var(--primary);
+}
+
+.admin-jobs.dropdown .dropdown-toggle::after {
+	content: "\f078";
+	border: none;
+	font-family: "Font Awesome 6 Free";
+}
+
+.admin-jobs.dropdown .dropdown-menu {
+	color: white;
+	/* background-color: rgb(116 115 115 / 50%); */
+	background-color: var(--dropdown-bg-list);
+}
+
+.admin-jobs.dropdown .dropdown-item {
+	color: var(--white);
+}
+
+.admin-jobs.dropdown .dropdown-item:hover {
+	background-color: var(--primary-light-opacity);
+}
+
+.topbar-sm ul {
+	min-width: fit-content;
+}
+
+@media (max-width: 575px) {
+	.flex-basis-50 {
+		flex-basis: 100%;
+		min-width: fit-content;
+	}
+}
+@media (min-width: 576px) {
+	.flex-basis-50 {
+		flex-basis: 50%;
+		min-width: fit-content;
+	}
+}
+
+/* job-status-badge open or close ------------------------------- */
+.job-status-badge {
+	position: absolute;
+	top: auto;
+	right: 8px;
+	width: fit-content;
+}
+
+.jobs-delete-add-icon {
+	margin-top: -60px;
+}
+
+.admin-Joblist-pagination .page-item.job-list-active {
+	color: var(--primary);
+}
+
+.admin-Joblist-pagination .page-link {
+	background-color: transparent;
+	color: inherit;
+	border: none;
+	transition: 0.3s ease-out;
+	-webkit-transition: 0.3s ease-out;
+}
+
+.admin-Joblist-pagination .page-link:hover {
+	box-shadow: none;
+	color: var(--primary-light);
+	transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+}
+.admin-Joblist-pagination .page-link:focus {
+	box-shadow: none;
+	transform: scale(1);
+	-webkit-transform: scale(1);
+}
+
+.admin-Joblist-pagination .page-item.disabled {
+	color: gray;
+}
+
+/* --------------------------- admin__sidebar ---------------------------------- */
+.admin__sidebar .admin__sidebar-links{
+	color: var(--white);
+}
+.admin__sidebar .admin__sidebar-links.admin-sidebar-active,
+.admin__sidebar .admin__sidebar-links:hover {
+	color: var(--primary);
+}
+
+.admin__sidebar .admin__sidebar-link {
+	transition: 0.3s ease-out;
+	-webkit-transition: 0.3s ease-out;
+	position: relative;
+	color: var(--white);
+}
+.admin__sidebar .admin__sidebar-link.admin-sidebar-active,
+.admin__sidebar .admin__sidebar-link:hover {
+	transform: translateX(15px);
+	-webkit-transform: translateX(15px);
+	color: var(--primary);
+}
+.admin__sidebar .admin__sidebar-link::before {
+	content: "\f101";
+	font-family: "Font Awesome 6 Free";
+	margin-right: 5px;
+	display: none;
+	transition: 0.3s ease-out;
+	-webkit-transition: 0.3s ease-out;
+}
+.admin__sidebar .admin__sidebar-link.admin-sidebar-active,
+.admin__sidebar .admin__sidebar-link:hover::before {
+	display: inline;
+}
